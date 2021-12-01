@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+a { text-decoration:none }
+</style>
+
+<style>
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  rgb(0,0,0);
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: 750px;
+  background: rgb(128,128,128);
+  padding: 30px;
+  font-size: 30px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: rgb(0256,256,256);
+  height: 750px;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: rgb(178, 178, 178);
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+/* 반응형으로 창이 작아지면 레이아웃이 자동정렬 됩니다. */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>건축,우리가 밟아야 하는길은 무엇인가.</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h2>목차</h2></li>
+      <ol><li><a href="Index.html" style="color:black">Homepage</a></li>
+      <li><a href="HighSchool.html" style="color:white">At School</a></li>
+      <li><a href="College.html" style="color:black">At College</a></li>
+      <li><a href="Society.html" style="color:black">At Society</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <p><h2>고등학교</h2></p>
+  </br>
+
+  <p><h1>1.과목선택</h1></p>
+    <p>고등학교 2학년과정 - 물리학 I, 화학 I, 지구과학I, 생명과학I 중 택 3</p>
+    <p>고등학교 3학년과정 - 기하,수학과제 탐구/공학 일반/ 물리학 II,화학II...중 선택</p>
+    <p>건축학과는 수학,과학적인 능력이 중요하므로 적당한 선에서, 자신과 잘 맞는 과목과 건축학과의 맞는 과목을 타협해 나가면서 선택하는것이 중요</p>
+  <p align=center><img src="https://img.hani.co.kr/imgdb/original/2018/0313/152085413264_20180313.JPG" width=40%>
+  <p><h1>2.생활기록부</h1></p>
+    <p>건축과 관련된 활동을 주로 하고, 다른과목도 건축과 연관지어서 해야함.</p>
+    <p>리더십의 자질, 인간을 위한 배려심등의 인간적 요소 중요</p>
+
+
+  </article>
+</section>
+
+<footer>
+  <p><align=left>10720 최원영이 동아리 프로젝트 및 건축정보 소개용으로 만든 사이트인것을 알림.  </p>
+</footer>
+
+</body>
+</html>
